@@ -1,0 +1,35 @@
+.top-bar{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    height:60px;
+    background-image: url(https://www.avowstech.com/wp-content/uploads/2022/07/Group-232.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white!important;
+}
+.header{
+    color: white;
+    font-weight: 600!important;
+    font-size: 24px;
+    margin-left: 20px;
+    background-image: url(https://www.avowstech.com/wp-content/uploads/2022/07/cropped-Mask-Group-26.png);
+    background-repeat: no-repeat;
+    background-size: 200px 62px;
+    width: 20%;
+}
+.logout{
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-weight: 600!important;
+    font-size: 14px;    
+    margin-right:20px;
+    margin-top:5px;
+}
