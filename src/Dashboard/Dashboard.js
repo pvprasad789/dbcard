@@ -57,7 +57,6 @@ function Dashboard() {
         </div>
         <div className="profile-card mb-3">
           <p className="label">Full Name</p>
-          {/* <p className="fullName mt-4">{fullName}</p> */}
           <input type="text" className="form-control fullName" placeholder=""  value={fullName} onChange={(e)=>setFullName(e.target.value)}/>
         </div>
         <div className="profile-card">
