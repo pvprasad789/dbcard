@@ -26,6 +26,7 @@ const Login = () => {
         const response = await axios.request(getUserToken);
         console.log("*********response", response);
         const { data } = response;
+        
         // let data = {
         //   status: "success",
         //   code: 200,
@@ -37,6 +38,7 @@ const Login = () => {
         //   tid: "T12343",
         //   roleid: "TA",
         // };
+
         JSON.stringify(data?.authToken);
         let token = data?.authToken.replaceAll('"', "");
         localStorage.setItem("dbcAuthToken", token);
