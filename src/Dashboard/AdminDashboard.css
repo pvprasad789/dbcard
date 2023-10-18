@@ -228,4 +228,19 @@
     padding-top: 22px;
     width: 100%;
   }
-  
+  .business-card{
+    width: 75%;
+    margin-left: 25%;
+    margin-top: 6%;
+    padding-top:2rem;
+    padding-left: 1rem;
+    background-color: #ecf4fb !important;
+    height: 100vh;
+  }
+  .txt-12{
+    font-size: 12px;
+  }
+  .bcard{
+    background-color: #ecf4fb !important;
+    height: 100vh;
+  }

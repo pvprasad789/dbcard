@@ -7,9 +7,10 @@ const TopBar=()=>{
         navigate('/')
     }
     return(
-        <div className='top-bar'>
-            <div className='header'></div>
-            <button className='logout' onClick={()=>doLogout()}>Logout</button>
+        <div className='container-fluid top-bar d-flex '>
+            {/* <div className='header img'></div> */}
+            <img src="https://www.avowstech.com/wp-content/uploads/2022/07/cropped-Mask-Group-26.png" class="img-fluid" alt="Avows Logo"></img>
+            <button className='btn text-white' onClick={()=>doLogout()}>Logout</button>
         </div>
     )
 }
