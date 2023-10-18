@@ -16,11 +16,11 @@ function UsersTable({ usersData }) {
     return (
       <>
         <tr role="row" className="text-center">
-          <td>{row?.state}</td>
-          <td>{row?.fullname}</td>
-          <td>{row?.cardnumber}</td>
-          <td>{row?.cstatus === 1 ? "Enabled" : "Disabled"}</td>
-          <td>
+          <td className='border border-gray-500'>{row?.state}</td>
+          <td className='border border-gray-500'>{row?.fullname}</td>
+          <td className='border border-gray-500'>{row?.cardnumber}</td>
+          <td className='border border-gray-500'>{row?.cstatus === 1 ? "Enabled" : "Disabled"}</td>
+          <td className='border border-gray-500'>
             {row?.state !== 1 ? (
               <span>
                 <i className="bi bi-x-circle-fill text-danger"></i>
@@ -31,17 +31,17 @@ function UsersTable({ usersData }) {
               </span>
             )}
           </td>
-          <td>{row?.mobilenumber}</td>
-          <td>
+          <td className='border border-gray-500'>{row?.mobilenumber}</td>
+          <td className='border border-gray-500'>
             <i className="bi bi-three-dots text-primary"></i>
           </td>
         </tr>
-				<tr role="row" className="text-center">
-          <td>{row?.state}</td>
-          <td>{row?.fullname}</td>
-          <td>{row?.cardnumber}</td>
-          <td>{row?.cstatus === 1 ? "Enabled" : "Disabled"}</td>
-          <td>
+				<tr className="text-center">
+          <td className='border border-gray-500'>{row?.state}</td>
+          <td className='border border-gray-500'>{row?.fullname}</td>
+          <td className='border border-gray-500'>{row?.cardnumber}</td>
+          <td className='border border-gray-500'>{row?.cstatus === 1 ? "Enabled" : "Disabled"}</td>
+          <td className='border border-gray-500'>
             {row?.state !== 1 ? (
               <span>
                 <i className="bi bi-x-circle-fill text-danger"></i>
@@ -52,17 +52,17 @@ function UsersTable({ usersData }) {
               </span>
             )}
           </td>
-          <td>{row?.mobilenumber}</td>
-          <td>
+          <td className='border border-gray-500'>{row?.mobilenumber}</td>
+          <td className='border border-gray-500'>
             <i className="bi bi-three-dots text-primary"></i>
           </td>
         </tr>
 				<tr role="row" className="text-center">
-          <td>{row?.state}</td>
-          <td>{row?.fullname}</td>
-          <td>{row?.cardnumber}</td>
-          <td>{row?.cstatus === 1 ? "Enabled" : "Disabled"}</td>
-          <td>
+          <td className='border border-gray-500'>{row?.state}</td>
+          <td className='border border-gray-500'> {row?.fullname}</td>
+          <td className='border border-gray-500'>{row?.cardnumber}</td>
+          <td className='border border-gray-500'>{row?.cstatus === 1 ? "Enabled" : "Disabled"}</td>
+          <td className='border border-gray-500'>
             {row?.state !== 1 ? (
               <span>
                 <i className="bi bi-x-circle-fill text-danger"></i>
@@ -73,17 +73,17 @@ function UsersTable({ usersData }) {
               </span>
             )}
           </td>
-          <td>{row?.mobilenumber}</td>
-          <td>
+          <td className='border border-gray-500'>{row?.mobilenumber}</td>
+          <td className='border border-gray-500'>
             <i className="bi bi-three-dots text-primary"></i>
           </td>
         </tr>
 				<tr role="row" className="text-center">
-          <td>{row?.state}</td>
-          <td>{row?.fullname}</td>
-          <td>{row?.cardnumber}</td>
-          <td>{row?.cstatus === 1 ? "Enabled" : "Disabled"}</td>
-          <td>
+          <td className='border border-gray-500'>{row?.state}</td>
+          <td className='border border-gray-500'>{row?.fullname}</td>
+          <td className='border border-gray-500'>{row?.cardnumber}</td>
+          <td className='border border-gray-500'>{row?.cstatus === 1 ? "Enabled" : "Disabled"}</td>
+          <td className='border border-gray-500'>
             {row?.state !== 1 ? (
               <span>
                 <i className="bi bi-x-circle-fill text-danger"></i>
@@ -94,17 +94,17 @@ function UsersTable({ usersData }) {
               </span>
             )}
           </td>
-          <td>{row?.mobilenumber}</td>
-          <td>
+          <td className='border border-gray-500'>{row?.mobilenumber}</td>
+          <td className='border border-gray-500'>
             <i className="bi bi-three-dots text-primary"></i>
           </td>
         </tr>
 				<tr role="row" className="text-center">
-          <td>{row?.state}</td>
-          <td>{row?.fullname}</td>
-          <td>{row?.cardnumber}</td>
-          <td>{row?.cstatus === 1 ? "Enabled" : "Disabled"}</td>
-          <td>
+          <td className='border border-gray-500'>{row?.state}</td>
+          <td className='border border-gray-500'>{row?.fullname}</td>
+          <td className='border border-gray-500'>{row?.cardnumber}</td>
+          <td className='border border-gray-500'>{row?.cstatus === 1 ? "Enabled" : "Disabled"}</td>
+          <td className='border border-gray-500'>
             {row?.state === 1 ? (
               <span>
                 <i className="bi bi-x-circle-fill text-danger"></i>
@@ -115,8 +115,8 @@ function UsersTable({ usersData }) {
               </span>
             )}
           </td>
-          <td>{row?.mobilenumber}</td>
-          <td>
+          <td className='border border-gray-500'>{row?.mobilenumber}</td>
+          <td className='border border-gray-500'>
             <i className="bi bi-three-dots text-primary"></i>
           </td>
         </tr>
@@ -124,18 +124,20 @@ function UsersTable({ usersData }) {
     );
   });
   return (
-    <table className="table table-bordered dataTable no-footer dtr-inline mt-2">
-      <thead>
-        <tr role="row">
-          {headerColumns.map((headerColumn) => {
-            return <th className={headerColumn !== 'No'? 'col-2' : ''}>{headerColumn}</th>;
-          })}
-        </tr>
-      </thead>
-      <tbody>
-        {userData}
-      </tbody>
-    </table>
+    <div className="m-2">
+      <table className="table-auto w-full bg-white border border-gray-200">
+        <thead className="border bg-blue-800 text-white">
+          <tr>
+            {headerColumns.map((headerColumn) => {
+              return <th className='font-light border border-gray-500'>{headerColumn}</th>;
+            })}
+          </tr>
+        </thead>
+        <tbody>
+          {userData}
+        </tbody>
+      </table>
+    </div>
   );
 }
 
